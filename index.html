@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/b2e4290529.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> 
     <link rel="stylesheet" href="css/add.css" />
     <title>Boodstrap 4.3 + JQuery 3.4 + Font Awesome last Template</title>
   </head>
@@ -31,6 +26,7 @@
       crossorigin="anonymous"
     ></script>
 
+<!-- Nav section-->
     <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
       <a href="#" class="navbar-brand h1">Linux template</a>
       <button
@@ -44,7 +40,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#home">Home </a>
@@ -61,6 +57,64 @@
         </ul>
       </div>
     </nav>
+<!-- Home section -->
+    <header id="home" class="">
+      <div class="dark-mod ">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-8 d-md-block d-none">
+              <h1 class="display-4 text-center">Why Linux?</h1>
+              <div class="d-flex  align-items-center">
+                <div class="p-4 align-self-starte">
+                  <i class="fas fa-check fa-3x "></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  <strong class="text-uppercase text-center d-block h4">safe</strong> 
+                  - because it is open source
+                </div>
+              </div>
+              <div class="d-flex  align-items-center">
+                <div class="p-4 align-self-starte">
+                  <i class="fas fa-check fa-3x "></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  <strong class="text-uppercase text-center d-block h4">efficient</strong> 
+                  - he does not waste your memory in vain
+                </div>
+              </div> 
+              <div class="d-flex  align-items-center">
+                <div class="p-4 align-self-starte">
+                  <i class="fas fa-check fa-3x "></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  <strong class="text-uppercase text-center d-block h4">stable</strong> 
+                  - don't need weekly reboot to be work for next days
+                </div>
+              </div>                                           
+            </div>
+            <div class=" col-md-4">
+              <div class="card text-center bg-primary"> 
+                <div class="card-body">
+                  <h3 class="card-title">Send advantage</h3>
+                  <p class="card-text">Please think few moments and send your the best feature about linux</p>
+                  <form action="#">
+                    <div class="form-group">
+                      <label for="advantage-title" class="d-none">Feature </label>
+                      <input type="text" id="advantage-title" class="form-control form-control-lg" placeholder="Feature">
+                    </div>
+                    <div class="form-group">
+                        <label for="advantage-description" class="d-none">Why you think that</label>
+                        <textarea class="form-control form-control-lg" id="advantage-description" rows="3" placeholder="write about it"></textarea>
+                      </div>                    
+                      <button class="btn btn-outline-light btn-block ">Sent</button>
+                  </form>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     
   </body>

@@ -1,5 +1,8 @@
 {
     "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "on"
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on",
+    "css.remoteStyleSheets": [
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      ]
 }
