@@ -7,3 +7,34 @@ body {
   border-bottom: #008ed7 4px solid;
   opacity: 0.95;
 }
+
+#home {
+  background: url('../img/animal-cold-daylight-209096.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+#home .dark-mod {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 600px;  
+}
+
+#home .container {
+  padding-top: 150px;
+}
+
+#home .card {
+  opacity: 0.9;
+}
+
+#home .fas {
+  border: 1px solid #fff;
+  padding: 7px;
+  border-radius: 15%;
+}
