@@ -100,7 +100,7 @@
     <section id="history">
       <div class="container">
         <div class="row">
-        <div class="col py-5">
+        <div class="col py-5 my-3">
           <h1 class="display-4">
             History
           </h1>
@@ -179,7 +179,7 @@
     <section id="discribution" class=" bg-primary">
         <div class="container">
           <div class="row">
-            <div class="col py-5 text-center">
+            <div class="col py-5 my-3 text-center">
               <h1 class="display-4">Five discributions</h1>
               
               <p class="lead">
@@ -191,11 +191,11 @@
         </div>
       </section>
 <!-- Discributions section-->
-      <section id="discribution-section"  class="pt-5">
+      <section id="discribution-section"  class="py-5">
         <div class="container">
           <div class="row">
             <div class="col-md-6 order-2">
-              <img src="img/animals-cold-feathers-165170.jpg" alt="many monitors" class="img-fluid rounded-circle w-50 mx-auto  d-block">
+              <img src="img/animals-cold-feathers-165170.jpg" alt="many monitors" class="img-fluid rounded-circle w-50 mx-auto my-auto d-block">
             </div>
             <div class="col-md-6 order-1 my-auto">
               <ul class="list-group list-group-flush ">
@@ -209,6 +209,37 @@
           </div>
         </div>
       </section>
+<!-- Footer -->
+      <footer class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center py-4">
+              <p>This page built at <span id="actual-date"></span></p>
+              <button class="btn btn-primary" data-target="#modal-get-more" data-toggle="modal">Get more templates</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+<!--Modal-->
+      <div class="modal" id="modal-get-more">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title">Get more <u>#bootstrap</u> templates</h5>
+              <button class="close" data-dismiss="modal"><i class="fas fa-bomb "></i></button>
+            </div>
+            <div class="modal-body bg-light text-dark text-center">
+                <h5>Let's get source of this template</h5>
+                <i class="fas fa-code-branch fa-10x my-4"></i>
+                <p class="my-2">if you want you you can allwasy go to <a href="https://github.com/LukaszSarzynski/" class="fab fa-github"></a> github and fork my bootstrap repository, will be better for you to modifity it.</p>
+              
+              </div>
+              <a href="https://github.com/LukaszSarzynski/Bootstrap-sandbox" class="btn btn-success" >Ok, go there</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        
 
       <script 
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -224,6 +255,26 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script>    
+    ></script> 
+    <script>
+      $('#actual-date').text(new Date().toISOString().substr(0,10));
+
+      // @note source: https://stackoverflow.com/questions/14804941/
+      $("nav ul li a[href^='#']").on('click', function(e) {
+        // prevent default anchor click behavior
+        e.preventDefault();    
+        // store hash
+        var hash = this.hash;
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 700, function(){
+            // when done, add hash to url
+            // (default click behaviour)
+            window.location.hash = hash;
+          });
+     
+     });
+    </script>   
   </body>
 </html>
