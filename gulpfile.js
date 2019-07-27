@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-
-gulp.task('default', function() {
+function hello(cb) {
   console.log('hello from Gulp');
-})
+  cb();
+}
+
+exports.default = hello;
