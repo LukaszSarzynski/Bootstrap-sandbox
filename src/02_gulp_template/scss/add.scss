@@ -1,0 +1,17 @@
+$color-primary: #3292a5;
+$color-primary-overlay: rgba(50,146,165,0.9);
+
+body {
+  margin-top: 120px;
+}
+
+.navbar {
+  box-shadow: 0 4px 2px $color-primary;
+  opacity: 0.9;
+  
+  .nav-item {
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    font-weight: 400;
+  }
+}
